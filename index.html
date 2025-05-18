@@ -3,16 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>サービス稼働状況</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>サービス稼働状況</h1>
-  <div id="status"></div>
-  <script>
-    fetch('status.json')
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById('status').innerText = JSON.stringify(data, null, 2);
-      });
-  </script>
+  <div id="status-container"></div>
+  <script src="main.js"></script>
 </body>
 </html>
